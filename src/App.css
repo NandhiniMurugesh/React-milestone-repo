@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+.image
+{
+  width: 145px;
+}
+.title
+{
+  width: 240px;
+}
+.description
+{
+  width: 320px;
+}
+.price
+{
+  width: 70px;
+}
+.rating
+{
+  width: 250px;
+ 
+}
+table  td
+{
+  border: 3px solid black;
+  /* border-collapse: separate; */
+}
+.inpbox
+{
+  width: 20px;
+  margin-top: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headDiv
+{
+  background-color: rgb(57, 236, 236);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table{
+   background-color: rgb(229, 250, 250);;
+
+}
+tr:nth-child(even) {
+  background-color: rgb(205, 249, 249);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dwnld
+{
+width: 150px;
+padding: 10px;
+color: aliceblue;
+margin-left: 80%;
+background-color: rgb(16, 244, 210);
 }
-
-.App-link {
-  color: #61dafb;
+button{
+  background-color: rgb(132, 244, 242);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover
+{
+  background-color:  transparent;
+  color: rgb(79, 76, 76);
+}
+.dispimage
+{
+  width: 350px;
+  border-radius: 30%;
+}
+.dispimg
+{
+  border-radius: 10%;
+  background-color: rgb(132, 244, 242);
+}
+.dispcontent
+{
+  background-color: rgb(132, 244, 242);
+  border-radius: 10%;
+  padding: 10%;
+}
+.dispMain
+{
+  background-color: black;
+  
+}
+.dispprice
+{
+  color: blue;
+}
+.dispprice:hover
+{
+  color: rgb(15, 129, 129);
+}
+.dispcat
+{
+  color: red;
+}
+.dispcat:hover
+{
+  color: orange;
 }

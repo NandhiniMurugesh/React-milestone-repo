@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import { Jsonproduct } from './Components/jsonproducts';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Productdisplay } from './Components/productdisplay';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+
+   <BrowserRouter>
+   <Routes>
+   <Route path='/' element={<Jsonproduct/>}/>
+   <Route path='/productdisplay/:id' element={<Productdisplay/>}/>
+   </Routes>
+   </BrowserRouter>
+   </>
   );
 }
 
